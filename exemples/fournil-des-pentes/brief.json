@@ -1,0 +1,458 @@
+{
+  "slug": "fournil-des-pentes",
+  "site": {
+    "nom": "Le Fournil des Pentes",
+    "slogan": "Pain au levain et viennoiseries cuits chaque matin sur les pentes de la Croix-Rousse",
+    "description": "Boulangerie artisanale à Lyon 1er : pain au levain naturel, viennoiseries pur beurre et commandes pour les entreprises du quartier.",
+    "langue": "fr",
+    "type": "vitrine",
+    "pays": "FR"
+  },
+  "admin": {
+    "nom": "Camille Morel",
+    "fonction": "Boulangère, fondatrice du Fournil des Pentes",
+    "bio": "Boulangère au levain naturel, installée sur les pentes de la Croix-Rousse à Lyon.",
+    "email": "camille@exemple-fictif.fr",
+    "mot_de_passe": "",
+    "adresse": ""
+  },
+  "domaine": {
+    "url": "https://www.fournil-des-pentes-exemple.fr",
+    "statut": "a-acheter",
+    "hebergeur": "Hébergeur Exemple",
+    "ssl": "oui"
+  },
+  "identite": {
+    "type": "LocalBusiness",
+    "statut_juridique": "entreprise-individuelle",
+    "nom_legal": "Camille Morel — Le Fournil des Pentes",
+    "telephone": "+33 4 00 00 00 00",
+    "email": "contact@fournil-des-pentes-exemple.fr",
+    "adresse": "12 montée de l'Exemple",
+    "code_postal": "69001",
+    "ville": "Lyon",
+    "region": "Auvergne-Rhône-Alpes",
+    "pays": "FR",
+    "horaires": "Mo-Sa 07:00-19:30",
+    "gamme_prix": "€"
+  },
+  "seo": {
+    "indexer": true,
+    "robots_ia": "open",
+    "format_titre": "{title} · {site}",
+    "image_partage": "accueil",
+    "a_propos_ia": "Le Fournil des Pentes est une boulangerie artisanale de Lyon 1er (Croix-Rousse) : pain au levain naturel, viennoiseries pur beurre, commandes pour entreprises."
+  },
+  "profil_editorial": {
+    "about": "Boulangerie artisanale au levain naturel, Lyon 1er.",
+    "audience": "Habitants et salariés des pentes de la Croix-Rousse.",
+    "tone": "Chaleureux, simple, précis sur les produits.",
+    "values": "Levain naturel, farines de meuniers régionaux, fait sur place.",
+    "rules": "Ne jamais inventer de prix, de récompenses ni d'avis clients.",
+    "visual": "Lumière du matin, farine, bois, terre cuite."
+  },
+  "design": {
+    "direction": "argile",
+    "logo": "logo",
+    "sombre": "auto"
+  },
+  "images_fournisseur": "fichiers",
+  "images": [
+    {
+      "cle": "accueil",
+      "fichier": "exemples/fournil-des-pentes/images/accueil.jpg",
+      "alt": "Pains au levain alignés sur une planche en bois au petit matin",
+      "prompt": "Rustic sourdough loaves on a wooden board, early morning light, flour dust, warm terracotta tones, editorial food photography, no text"
+    },
+    {
+      "cle": "atelier",
+      "fichier": "exemples/fournil-des-pentes/images/atelier.jpg",
+      "alt": "Le fournil : pétrin et pâtons qui lèvent dans des bannetons",
+      "prompt": "Artisan bakery workshop, dough rising in proofing baskets, soft daylight, clay and wood textures, no people, no text"
+    },
+    {
+      "cle": "logo",
+      "fichier": "exemples/fournil-des-pentes/images/logo.jpg",
+      "alt": "Logo du Fournil des Pentes",
+      "prompt": "Minimal round logo mark, wheat ear, terracotta on sand background, flat vector, no text"
+    }
+  ],
+  "blog": {
+    "actif": true,
+    "titre": "Le carnet du fournil",
+    "description": "Conseils de conservation, recettes et coulisses de la boulangerie.",
+    "adresse": "carnet"
+  },
+  "categories": [
+    {
+      "cle": "conseils",
+      "nom": "Conseils",
+      "description": "Bien choisir, conserver et réchauffer son pain."
+    }
+  ],
+  "accueil": "accueil",
+  "pages": [
+    {
+      "cle": "accueil",
+      "titre": "Accueil",
+      "slug": "accueil",
+      "options": {
+        "hide_title": true,
+        "toc": "off"
+      },
+      "seo": {
+        "title": "Boulangerie au levain à Lyon 1er · Croix-Rousse",
+        "description": "Le Fournil des Pentes, boulangerie au levain à Lyon 1er : pain au levain naturel et viennoiseries pur beurre cuits chaque matin, commandes pour les entreprises.",
+        "keyword": "boulangerie au levain"
+      },
+      "blocs": [
+        {
+          "type": "hero",
+          "title": "Votre boulangerie au levain sur les pentes de la Croix-Rousse",
+          "text": "Cuit chaque matin sur place, avec des farines de meuniers de la région.",
+          "button": "Commander pour mon équipe",
+          "url": "@page:contact",
+          "button2": "Voir nos pains",
+          "url2": "@page:pains",
+          "media": "@img:accueil"
+        },
+        {
+          "type": "features",
+          "title": "Ce qui fait notre pain",
+          "items": [
+            {
+              "icon": "🌿",
+              "title": "Levain naturel",
+              "text": "Une fermentation lente, sans levure ajoutée, pour un pain qui se garde plusieurs jours."
+            },
+            {
+              "icon": "🔥",
+              "title": "Cuit sur place",
+              "text": "Fournées du matin et de fin d'après-midi : le pain sort du four à deux pas de chez vous."
+            },
+            {
+              "icon": "🤝",
+              "title": "Commandes d'entreprise",
+              "text": "Petits-déjeuners et plateaux pour les bureaux du quartier, sur commande la veille."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Une boulangerie au levain ouverte six jours sur sept"
+        },
+        {
+          "type": "paragraph",
+          "text": "Du lundi au samedi, de 7 h à 19 h 30. Fermé le dimanche."
+        },
+        {
+          "type": "posts",
+          "title": "Le carnet du fournil",
+          "count": 3
+        },
+        {
+          "type": "button",
+          "text": "Nous écrire",
+          "url": "@page:contact",
+          "style": "primary",
+          "align": "center"
+        }
+      ]
+    },
+    {
+      "cle": "pains",
+      "titre": "Nos pains",
+      "slug": "pain-au-levain",
+      "seo": {
+        "title": "Pain au levain et viennoiseries pur beurre à Lyon",
+        "description": "Tourte de seigle, pain de campagne, baguette de tradition et viennoiseries pur beurre : tout notre pain au levain, cuit chaque matin à Lyon 1er.",
+        "keyword": "pain au levain"
+      },
+      "blocs": [
+        {
+          "type": "paragraph",
+          "text": "Chaque pain au levain du fournil repose sur un levain naturel entretenu tous les jours, avec une fermentation lente de 12 à 18 heures."
+        },
+        {
+          "type": "image",
+          "media": "@img:atelier",
+          "alt": "Le fournil : pétrin et pâtons qui lèvent dans des bannetons",
+          "size": "wide"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Nos pains au levain"
+        },
+        {
+          "type": "list",
+          "style": "ul",
+          "items": [
+            "Pain de campagne au levain",
+            "Tourte de seigle",
+            "Baguette de tradition",
+            "Pain aux céréales"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Les viennoiseries"
+        },
+        {
+          "type": "list",
+          "style": "ul",
+          "items": [
+            "Croissant pur beurre",
+            "Pain au chocolat",
+            "Brioche maison le week-end"
+          ]
+        },
+        {
+          "type": "faq",
+          "title": "Questions fréquentes",
+          "items": [
+            {
+              "q": "Combien de temps se garde un pain au levain ?",
+              "a": "Bien emballé dans un torchon, un pain au levain se garde généralement plusieurs jours : sa fermentation lente le rend moins rassis qu'un pain à la levure."
+            },
+            {
+              "q": "Peut-on réserver son pain ?",
+              "a": "Oui, par le formulaire de contact ou au comptoir, la veille avant 18 h."
+            }
+          ]
+        }
+      ],
+      "resume": "Tous les pains du Fournil des Pentes sont faits au levain naturel, sans levure ajoutée : pain de campagne, tourte de seigle, baguette de tradition et pain aux céréales, plus des viennoiseries pur beurre."
+    },
+    {
+      "cle": "a-propos",
+      "titre": "À propos",
+      "slug": "a-propos",
+      "seo": {
+        "description": "Qui fait le pain du Fournil des Pentes, à Lyon 1er : notre façon de travailler et nos fournisseurs de farine."
+      },
+      "blocs": [
+        {
+          "type": "paragraph",
+          "text": "Le Fournil des Pentes est une boulangerie artisanale installée sur les pentes de la Croix-Rousse."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Notre façon de travailler"
+        },
+        {
+          "type": "paragraph",
+          "text": "Camille a ouvert le fournil après plusieurs années dans des boulangeries lyonnaises. Le pain y est façonné à la main, en petites fournées, pour qu'il reste toujours frais au comptoir."
+        }
+      ],
+      "resume": "Le Fournil des Pentes est une boulangerie artisanale de Lyon 1er qui travaille au levain naturel, avec des farines de meuniers de la région, et cuit son pain sur place chaque jour."
+    },
+    {
+      "cle": "contact",
+      "titre": "Contact",
+      "slug": "contact",
+      "seo": {
+        "description": "Contacter le Fournil des Pentes à Lyon 1er : réservation de pain, commandes pour entreprises, horaires et adresse."
+      },
+      "blocs": [
+        {
+          "type": "paragraph",
+          "text": "Une réservation, une commande pour votre équipe ? Écrivez-nous, nous répondons dans la journée."
+        },
+        {
+          "type": "contact",
+          "title": "Votre message",
+          "button": "Envoyer"
+        },
+        {
+          "type": "paragraph",
+          "text": "Vos nom, e-mail et message servent uniquement à vous répondre. Merci de ne pas y indiquer de données sensibles. En savoir plus : <a href=\"@page:confidentialite\">politique de confidentialité</a>."
+        }
+      ],
+      "resume": "Pour réserver du pain ou commander pour une équipe, le Fournil des Pentes répond par e-mail dans la journée. La boutique est ouverte du lundi au samedi, de 7 h à 19 h 30."
+    },
+    {
+      "cle": "mentions",
+      "titre": "Mentions légales",
+      "slug": "mentions-legales",
+      "seo": {
+        "noindex": true,
+        "description": "Mentions légales du site du Fournil des Pentes."
+      },
+      "blocs": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Éditeur du site"
+        },
+        {
+          "type": "paragraph",
+          "text": "Camille Morel, entrepreneure individuelle, exerçant sous le nom commercial « Le Fournil des Pentes »."
+        },
+        {
+          "type": "list",
+          "style": "ul",
+          "items": [
+            "Adresse : 12 montée de l'Exemple, 69001 Lyon",
+            "Téléphone : +33 4 00 00 00 00",
+            "E-mail : contact@fournil-des-pentes-exemple.fr",
+            "SIREN : 000 000 000 (fictif)",
+            "Immatriculation : Registre national des entreprises (RNE)",
+            "TVA : non applicable, article 293 B du CGI"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Directrice de la publication"
+        },
+        {
+          "type": "paragraph",
+          "text": "Camille Morel."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Hébergeur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hébergeur Exemple SAS, 1 rue de l'Exemple, 00000 Exempleville, France — téléphone : +33 0 00 00 00 00 (données fictives de l'exemple)."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Propriété intellectuelle"
+        },
+        {
+          "type": "paragraph",
+          "text": "Les textes et images de ce site appartiennent à leur éditeur, sauf mention contraire. Toute reproduction sans autorisation est interdite."
+        }
+      ]
+    },
+    {
+      "cle": "confidentialite",
+      "titre": "Politique de confidentialité",
+      "slug": "confidentialite",
+      "seo": {
+        "noindex": true,
+        "description": "Comment le Fournil des Pentes traite les données envoyées par le formulaire de contact."
+      },
+      "blocs": [
+        {
+          "type": "paragraph",
+          "text": "Responsable du traitement : Camille Morel (Le Fournil des Pentes), contact@fournil-des-pentes-exemple.fr."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Données collectées et finalité"
+        },
+        {
+          "type": "paragraph",
+          "text": "Le formulaire de contact recueille votre nom, votre adresse e-mail et votre message, uniquement pour vous répondre (base légale : votre demande)."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Durée de conservation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Les messages sont conservés 12 mois au plus, puis supprimés."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Vos droits"
+        },
+        {
+          "type": "paragraph",
+          "text": "Vous pouvez demander l'accès, la rectification ou l'effacement de vos données en écrivant à l'adresse ci-dessus, et saisir la CNIL (cnil.fr) en cas de difficulté."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cookies et mesure d'audience"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ce site n'utilise ni cookie publicitaire ni outil de mesure d'audience tiers. Seul un cookie technique de sécurité peut être déposé lors de l'envoi du formulaire."
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "cle": "conserver-pain",
+      "titre": "Comment conserver un pain au levain",
+      "slug": "conserver-un-pain-au-levain",
+      "categorie": "conseils",
+      "resume": "Pour conserver un pain au levain, laissez-le refroidir, gardez-le dans un torchon ou un sac en papier, face coupée contre la planche, et congelez-le en tranches au-delà de trois ou quatre jours.",
+      "image": "@img:accueil",
+      "seo": {
+        "title": "Conserver un pain au levain : 4 gestes simples",
+        "description": "Torchon, sac en papier ou congélateur : comment conserver un pain au levain plusieurs jours sans qu'il durcisse, avec les gestes du boulanger.",
+        "keyword": "conserver un pain au levain"
+      },
+      "blocs": [
+        {
+          "type": "paragraph",
+          "text": "Pour conserver un pain au levain plusieurs jours, il suffit de lui éviter le plastique, la chaleur et le réfrigérateur."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Comment conserver un pain au levain ?"
+        },
+        {
+          "type": "list",
+          "style": "ol",
+          "items": [
+            "Laissez-le refroidir complètement avant de l'emballer.",
+            "Enveloppez-le dans un torchon propre ou un sac en papier.",
+            "Posez-le face coupée contre la planche.",
+            "Pour le garder plus longtemps, tranchez-le et congelez-le."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Astuce",
+          "text": "Un pain un peu sec retrouve du croustillant après quelques minutes dans un four chaud."
+        },
+        {
+          "type": "faq",
+          "title": "",
+          "items": [
+            {
+              "q": "Faut-il mettre le pain au réfrigérateur ?",
+              "a": "Non : le froid du réfrigérateur accélère le rassissement. Préférez un torchon ou le congélateur."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "menus": {
+    "principal": [
+      "pains",
+      "a-propos",
+      "@blog",
+      "contact"
+    ],
+    "pied": [
+      "mentions",
+      "confidentialite"
+    ]
+  },
+  "reseaux": {
+    "instagram": ""
+  },
+  "contact": {
+    "merci": "Merci ! Votre message est bien arrivé, nous vous répondons dans la journée."
+  }
+}

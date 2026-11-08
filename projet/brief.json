@@ -1,0 +1,84 @@
+{
+  "slug": "",
+  "site": {
+    "nom": "",
+    "slogan": "",
+    "description": "",
+    "langue": "fr",
+    "type": "",
+    "pays": "FR"
+  },
+  "admin": {
+    "nom": "",
+    "email": "",
+    "fonction": "",
+    "bio": "",
+    "mot_de_passe": "",
+    "adresse": ""
+  },
+  "domaine": {
+    "url": "",
+    "statut": "",
+    "hebergeur": "",
+    "ssl": "inconnu"
+  },
+  "identite": {
+    "type": "Organization",
+    "statut_juridique": "",
+    "nom_legal": "",
+    "telephone": "",
+    "email": "",
+    "adresse": "",
+    "code_postal": "",
+    "ville": "",
+    "region": "",
+    "pays": "",
+    "horaires": "",
+    "gamme_prix": ""
+  },
+  "seo": {
+    "indexer": true,
+    "robots_ia": "open",
+    "format_titre": "{title} · {site}",
+    "image_partage": "",
+    "a_propos_ia": ""
+  },
+  "profil_editorial": {
+    "about": "",
+    "audience": "",
+    "tone": "",
+    "values": "",
+    "rules": "Ne jamais inventer de prix, de chiffres, d'avis clients ni de récompenses.",
+    "visual": ""
+  },
+  "design": {
+    "direction": "",
+    "logo": "",
+    "sombre": "auto"
+  },
+  "images_fournisseur": "aucun",
+  "images_qualite": "normale",
+  "images": [],
+  "blog": {
+    "actif": false,
+    "titre": "Blog",
+    "description": "",
+    "adresse": "blog"
+  },
+  "categories": [],
+  "accueil": "accueil",
+  "pages": [],
+  "articles": [],
+  "produits": [],
+  "menus": {
+    "principal": [],
+    "pied": []
+  },
+  "reseaux": {},
+  "contact": {
+    "merci": ""
+  },
+  "boutique": {
+    "active": false
+  }
+}

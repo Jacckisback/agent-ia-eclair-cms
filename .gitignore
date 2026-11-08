@@ -1,0 +1,6 @@
+projet/.env
+projet/images/*
+!projet/images/.gitkeep
+sortie/
+outils/.cache/
+.DS_Store

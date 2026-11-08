@@ -1,0 +1,69 @@
+# Format de `projet/brief.json`
+
+Je l'écris moi-même au fil des réponses. Modèle vierge : `projet/brief.modele.json`. Exemple complet : `exemples/fournil-des-pentes/brief.json`.
+
+## Racine
+
+| Champ | Contenu |
+|---|---|
+| `slug` | identifiant du projet (lettres, chiffres, tirets) : nom du dossier et du ZIP |
+| `site` | `nom`, `slogan` (≤ 160 car.), `description`, `langue` (`fr`, `es`, `en`, `de`, `it`, `pt`), `type` (`vitrine`, `freelance`, `page-unique`, `blog`, `media`, `affiliation`), `pays` (`FR`, `ES`…), `fuseau` (facultatif) |
+| `admin` | `nom`, `email`, `fonction`, `bio` (≥ 40 caractères), `mot_de_passe` (vide = généré, recommandé), `adresse` (vide = `gestion-xxxxxx`, sinon 3 à 40 caractères a-z 0-9 -) |
+| `domaine` | `url` (`https://www.exemple.fr` ou vide), `statut` (`achete`, `a-acheter`, `plus-tard`), `hebergeur`, `ssl` (`oui`, `non`, `inconnu`) |
+| `identite` | `type` (`LocalBusiness`, `Organization`, `Person`), `statut_juridique`, `nom_legal`, `telephone`, `email`, `email_formulaire` (reçoit les messages, défaut = `email`), `adresse`, `code_postal`, `ville`, `region`, `pays`, `horaires` (`Mo-Fr 09:00-18:00`), `gamme_prix` (`€`, `€€`…) |
+| `seo` | `indexer` (true), `robots_ia` (`open`, `search`, `closed`), `format_titre` (`{title} · {site}`), `image_partage` (clé d'image), `a_propos_ia` |
+| `profil_editorial` | `about`, `audience`, `tone`, `values`, `rules`, `visual` (repris par l'assistant IA d'Éclair) |
+| `design` | `direction` (identifiant, voir `design.md`, ou objet sur mesure), `logo` (clé d'image), `sombre` (`auto`, `light`, `dark`), `pied_de_page` (texte libre) |
+| `css_personnalise` | CSS de finition (facultatif) |
+| `images_fournisseur` | `fal`, `openai`, `bfl`, `fichiers`, `aucun` ; `images_qualite` (`normale`, `haute`) ; `images_modele` (facultatif) |
+| `images` | liste : `cle`, `fichier` (`projet/images/<cle>.jpg`), `alt`, `prompt` (anglais), `format` (`paysage`, `carre`, `portrait`) |
+| `blog` | `actif`, `titre`, `description`, `adresse` (ex. `blog`, `conseils`) |
+| `categories` | liste : `cle`, `nom`, `description` (obligatoire : c'est la méta-description de la page catégorie), `contient` (`articles` ou `produits`) |
+| `accueil` | clé de la page d'accueil |
+| `pages`, `articles`, `produits` | voir ci-dessous |
+| `menus` | `principal` et `pied` : listes de clés, plus `@blog` et `@boutique` |
+| `reseaux` | `linkedin`, `x`, `facebook`, `instagram`, `youtube`, `tiktok`, `github`, `other` (URL complètes, seulement celles données) |
+| `contact` | `merci` (message après envoi du formulaire) |
+| `boutique` | `active`, `titre`, `description` (méta-description du catalogue), `devise`, `livraison` {`price`, `free_from`, `countries`, `days_min`, `days_max`}, `retours` {`days`, `free`}, `page_cgv`, `page_mentions`, `page_merci` (clés de pages) |
+
+## Une page, un article, un produit
+
+```json
+{
+  "cle": "services",
+  "titre": "Nos services",
+  "slug": "services-osteopathie",
+  "resume": "L'essentiel en 25 à 90 mots (pas sur l'accueil).",
+  "image": "@img:accueil",
+  "categorie": "conseils",
+  "seo": {"title": "…", "description": "…", "keyword": "…", "noindex": false},
+  "options": {"hide_title": false, "toc": "auto", "wide": false},
+  "blocs": [ … ],
+  "produit": {"price": "29.90", "compare": "", "availability": "in_stock", "link": "https://buy.stripe.com/…", "gallery": ["@img:produit1"], "brand": "", "sku": "", "variants": []}
+}
+```
+
+`"brouillon": true` crée le contenu sans le publier. `produit` seulement dans `produits` ; jamais de prix ni de lien de paiement inventés.
+
+## Blocs disponibles
+
+| `type` | Champs |
+|---|---|
+| `hero` | `title`, `text`, `button`, `url`, `button2`, `url2`, `media` |
+| `features` | `title`, `items` [{`icon`, `title`, `text`}] (icônes : `design.md`) |
+| `paragraph` | `text` (gras `<strong>`, italique `<em>`, liens `<a href>` permis) |
+| `heading` | `level` (2, 3, 4), `text`, `anchor` |
+| `list` | `style` (`ul`, `ol`), `items` [texte] |
+| `image` | `media`, `alt`, `caption`, `link`, `size` (`normal`, `wide`, `small`) |
+| `callout` | `variant` (`info`, `tip`, `warning`, `success`, `note`), `title`, `text` |
+| `faq` | `title`, `items` [{`q`, `a`}] |
+| `table` | `head` (true), `caption`, `rows` [[cellules]] |
+| `quote` | `text`, `cite` (seulement une vraie citation) |
+| `button` | `text`, `url`, `style` (`primary`, `secondary`), `align` (`left`, `center`) |
+| `team` | `title`, `items` [{`name`, `role`, `bio`, `media`, `link`}] |
+| `posts` / `products` | `title`, `count`, `category` |
+| `contact` | `title`, `button` (formulaire intégré d'Éclair) |
+| `video` | `url` (YouTube/Vimeo), `caption` |
+| `divider` | — |
+
+Références : `@img:<cle>` pour une image du brief, `@page:<cle>` pour l'adresse d'une page, d'un article ou d'un produit (résolue automatiquement).

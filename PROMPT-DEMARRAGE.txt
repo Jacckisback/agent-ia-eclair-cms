@@ -1,0 +1,1 @@
+Bonjour ! Lis CLAUDE.md puis REGLES.md, et lance le parcours de création de mon site Éclair CMS. Pose-moi les questions une par une.
