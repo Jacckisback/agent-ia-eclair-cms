@@ -9,4 +9,4 @@
 - Étapes 1 à 8 du parcours
 
 ## Prochaine action
-- Étape 1 : décrire l'activité
+- Première question : nouveau site ou migration WordPress

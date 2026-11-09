@@ -1,1 +1,1 @@
-864cf1d124a8e9a7278349ea3a32ae00108abdc322f85b3d08e045628a1136df  Agent-IA-Eclair-CMS-v1.0.0.zip
+7c142958dfa6412ea4073d84be40368c67f1c8a81c0cb691be3d9be2b8b573d6  Agent-IA-Eclair-CMS-v1.1.0.zip

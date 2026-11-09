@@ -1,9 +1,9 @@
 ---
 name: eclair-createur-site
-description: "Crée un site professionnel complet avec Éclair CMS en 5 minutes de questions : type de site, pages, textes, direction artistique, images IA (fal.ai, OpenAI, FLUX), SEO, GEO, mobile, mentions légales FR/ES, compte d'administration, puis livre un ZIP prêt à envoyer sur l'hébergement. À utiliser dès qu'on veut créer, refaire ou compléter un site Éclair CMS."
+description: "Crée un site professionnel complet avec Éclair CMS, ou migre un site WordPress vers Éclair avec l'extension Eclair Export (zéro 404), en 5 minutes de questions : type de site, pages, textes, direction artistique, images IA (fal.ai, OpenAI, FLUX), SEO, GEO, mobile, mentions légales FR/ES, compte d'administration, puis livre un ZIP prêt à envoyer sur l'hébergement. À utiliser dès qu'on veut créer, refaire ou compléter un site Éclair CMS."
 ---
 
-# Créer un site Éclair CMS de A à Z
+# Créer un site Éclair CMS de A à Z, ou migrer un site WordPress
 
 Règles : `REGLES.md` (prioritaires). Exemple complet à imiter : `exemples/fournil-des-pentes/brief.json`.
 
@@ -16,7 +16,16 @@ php outils/eclair-site.php construire projet/brief.json
 
 Le moteur télécharge **la dernière version d'Éclair** (annonce signée Ed25519 + empreinte SHA-256 vérifiées), l'installe avec l'assistant officiel d'Éclair sur un serveur local, applique le brief (pages, articles, produits, images, menus, réglages SEO/GEO, direction artistique, profil d'auteur, CSS de finition), contrôle chaque page (mobile, H1 unique, description, JSON-LD, sitemap, robots.txt, llms.txt, aucun « [À compléter] ») puis produit `sortie/<slug>-eclair-v<version>.zip`.
 
-## Le parcours (cible : 5 minutes de questions)
+## Première question : nouveau site ou migration ?
+
+> « On crée un **nouveau site**, ou on **passe ton site WordPress sur Éclair** (même adresse, mêmes pages, sans perdre ton référencement) ? »
+> `Nouveau site` / `Migrer mon WordPress` / `Conseille-moi`
+
+- `Nouveau site` → parcours ci-dessous (`brief.mode = "nouveau-site"`).
+- `Migrer mon WordPress` → je copie `projet/brief.modele-migration.json` dans `projet/brief.json`, puis parcours M1 à M10 de `references/migration.md`. Moteur : `simuler` puis `migrer` (`construire` refuse un brief de migration, et inversement).
+- `Conseille-moi` → une question : « As-tu déjà un site, et sur quoi est-il fait ? ». Site WordPress dont les contenus comptent (articles, référencement) → migration. Pas de site, ou un site à jeter → nouveau site. Autre CMS (Wix, Squarespace, Joomla…) → nouveau site, en reprenant ses textes à la main avec la personne, et redirections des anciennes adresses importantes dans `redirections`.
+
+## Le parcours « nouveau site » (cible : 5 minutes de questions)
 
 | Étape | Ce que je fais | Référence |
 |---|---|---|

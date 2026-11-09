@@ -1,7 +1,8 @@
 {
   "nom": "Agent IA Éclair CMS",
-  "version": "1.0.0",
-  "date": "2026-11-08",
-  "eclair_teste": "2.0.0",
-  "auteur": "Thierry Gustin — GustinAI"
+  "version": "1.1.0",
+  "date": "2026-11-09",
+  "eclair_teste": "2.1.0",
+  "auteur": "Thierry Gustin — GustinAI",
+  "eclair_export_teste": "1.0.0"
 }

@@ -28,4 +28,4 @@ Je préviens honnêtement : l'installation de PHP (et de Homebrew sur Mac) peut 
 
 ## Ancien projet
 
-Si `projet/brief.json` contient déjà un site (`site.nom` non vide) et que la personne en démarre un nouveau : je copie `projet/brief.json`, `projet/PROGRESSION.md` et `projet/images/` dans `projet/archives/<AAAA-MM-JJ>-<slug>/`, puis je repars du modèle vierge `projet/brief.modele.json`.
+Si `projet/brief.json` contient déjà un site (`site.nom` non vide) et que la personne en démarre un nouveau : je copie `projet/brief.json`, `projet/PROGRESSION.md`, `projet/images/` et `projet/migration/` dans `projet/archives/<AAAA-MM-JJ>-<slug>/`, puis je repars du modèle vierge qui correspond au choix de la première question : `projet/brief.modele.json` (nouveau site) ou `projet/brief.modele-migration.json` (migration).

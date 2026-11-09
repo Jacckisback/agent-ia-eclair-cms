@@ -15,4 +15,8 @@
 | En ligne, seul l'accueil fonctionne (erreur 404 ailleurs) | Le fichier caché `.htaccess` n'a pas été envoyé : affiche les fichiers cachés et envoie-le à côté de `index.php`. |
 | En ligne, page « Éclair a besoin de PHP 8.1 » | Change la version de PHP dans l'espace client de ton hébergeur (8.3 conseillé). |
 | En ligne, boucle de redirection ou erreur HTTPS | Le certificat SSL n'est pas encore actif alors que le site force HTTPS : active Let's Encrypt chez l'hébergeur et attends quelques minutes. Si tu ne peux pas l'activer, demande à l'agent de reconstruire avec `domaine.ssl = "non"`, puis active la redirection HTTPS plus tard dans Réglages › Avancé. |
+| Migration : `Site NON livré : des anciennes adresses finiraient en 404` | Normal, c'est une protection : l'agent ajoute les redirections manquantes et relance. |
+| Migration : `Aucune partie ne contient manifest.json` | Il manque la première partie de l'export (le fichier sans « -part » dans son nom) dans `projet/migration/`. |
+| Migration : `Parties manquantes` | Toutes les parties (`-part2`, `-part3`…) doivent être téléchargées ; elles sont supprimées du WordPress une fois téléchargées : refais l'export si l'une est perdue. |
+| Migration : l'extension Eclair Export ne s'installe pas | Compte non administrateur, ou WordPress plus ancien que 6.0 / PHP plus ancien que 7.4. Sinon, installation par FTP dans `wp-content/plugins/`. |
 | Mot de passe d'administration perdu | Guide d'Éclair, section Dépannage : https://github.com/Jacckisback/eclair-cms/blob/main/docs/GUIDE.md |

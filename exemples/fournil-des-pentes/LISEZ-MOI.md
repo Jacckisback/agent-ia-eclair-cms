@@ -3,7 +3,7 @@
 Boulangerie **inventée** pour montrer un brief complet : site vitrine, blog « Le carnet du fournil », direction artistique `argile`, mentions légales françaises, une page produits, un article.
 
 - Les coordonnées (téléphone, SIREN, adresse, hébergeur) sont **fictives** et marquées comme telles.
-- Les images de `images/` sont de simples dégradés de remplacement. Dans un vrai projet, elles sont générées avec `php outils/images.php projet/brief.json` à partir des champs `prompt`, ou fournies par la personne.
+- Les images de `images/` sont des illustrations vectorielles de démonstration. Dans un vrai projet, elles sont générées avec `php outils/images.php projet/brief.json` à partir des champs `prompt`, ou fournies par la personne.
 
 Construire l'exemple (depuis la racine du dossier) :
 

@@ -4,3 +4,5 @@ projet/images/*
 sortie/
 outils/.cache/
 .DS_Store
+projet/migration/*
+!projet/migration/.gitkeep

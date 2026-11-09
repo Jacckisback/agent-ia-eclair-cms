@@ -24,8 +24,8 @@ php outils/verifier-skills.php outils/.cache/eclair-skills
 | Espace membres | `eclair-memberships`, `eclair-auth-roles` |
 | Annuaire, offres d'emploi, immobilier | `eclair-directory`, `eclair-job-board`, `eclair-real-estate` |
 | Événements, billetterie | `eclair-events-ticketing` |
-| Site en plusieurs langues | `eclair-multilingual-seo` (Éclair relie les traductions et produit les hreflang) |
-| Reprendre un site WordPress | `eclair-wordpress-migration` (Éclair inclut aussi un import WordPress dans ses fonctions livrées) |
+| Site en plusieurs langues | Migration WordPress (WPML, Polylang) : repris par l'import, rien à faire. Nouveau site : une langue dans le ZIP, la seconde ensuite dans l'administration ou avec `eclair-multilingual-seo` |
+| Reprendre un site WordPress | Parcours intégré `migration.md` (Eclair Export + import d'Éclair). Le skill `eclair-wordpress-migration` n'est utile que pour des cas hors parcours |
 | Formulaires avancés, CRM | `eclair-forms-crm`, `eclair-crm-integration` |
 | Thème entièrement sur mesure | `eclair-theme-builder`, `eclair-design-system` ; sinon la direction artistique suffit dans 95 % des cas |
 | Audit SEO, GEO, accessibilité après mise en ligne | `eclair-seo-audit`, `eclair-geo-optimization`, `eclair-accessibility`, `eclair-structured-data` |

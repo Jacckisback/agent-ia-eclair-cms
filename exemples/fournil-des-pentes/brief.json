@@ -454,5 +454,6 @@
   },
   "contact": {
     "merci": "Merci ! Votre message est bien arrivé, nous vous répondons dans la journée."
-  }
+  },
+  "mode": "nouveau-site"
 }

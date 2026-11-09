@@ -1,4 +1,6 @@
-# Étapes 1 et 2 — Comprendre l'activité, proposer le site
+# Étapes 1 et 2 — Comprendre l'activité, proposer le site (nouveau site)
+
+Migration d'un WordPress : voir `migration.md`.
 
 ## Étape 1 : une seule question
 

@@ -1,6 +1,6 @@
 # Agent IA Éclair CMS — Commencer ici
 
-Un assistant qui crée ton site professionnel avec **Éclair CMS** en environ 5 minutes de questions (plus 5 à 15 minutes la toute première fois s'il faut installer PHP), et te le livre dans un fichier ZIP prêt à envoyer sur ton hébergement : pages, textes, design, images, SEO, GEO, version mobile, mentions légales, administration et mot de passe.
+Un assistant qui crée ton site professionnel avec **Éclair CMS** — ou qui passe ton site **WordPress** sur Éclair sans perdre une seule adresse — en environ 5 minutes de questions (plus 5 à 15 minutes la toute première fois s'il faut installer PHP), et te le livre dans un fichier ZIP prêt à envoyer sur ton hébergement : pages, textes, design, images, SEO, GEO, version mobile, mentions légales, administration et mot de passe.
 
 ## Ce qu'il te faut
 
@@ -17,7 +17,16 @@ Un assistant qui crée ton site professionnel avec **Éclair CMS** en environ 5 
 3. Copie-colle le contenu de `PROMPT-DEMARRAGE.txt`.
 4. Réponds aux questions. À la fin, tout est dans `sortie/` : le site `<ton-site>-eclair-v<version>.zip` et, à côté, `<ton-site>-ACCES-ADMIN.txt` (adresse de l'administration et mot de passe).
 
-## Ce que fait l'agent, dans l'ordre
+## Migrer un site WordPress
+
+1. L'agent te fait installer l'extension gratuite **Eclair Export** sur ton WordPress (2 minutes, il te guide clic par clic).
+2. Tu lances le diagnostic et l'export, tu glisses les fichiers obtenus dans `projet/migration/`.
+3. L'agent simule l'import, te dit ce qui passe et ce qui sera refait, puis construit le site Éclair : contenus, images, SEO, menus, redirections, nouveau design. Il vérifie que **chaque ancienne adresse** mène à une page (zéro 404).
+4. Tu reçois le ZIP et un guide de bascule (même hébergeur ou nouveau), avec retour en arrière possible.
+
+Ton WordPress n'est jamais modifié par l'agent et reste en ligne jusqu'à la bascule.
+
+## Ce que fait l'agent pour un nouveau site, dans l'ordre
 
 1. Comprend ton activité (une question).
 2. Te propose le type de site, les pages, le ton et 3 directions artistiques.

@@ -1,0 +1,55 @@
+{
+  "mode": "migration",
+  "slug": "",
+  "migration": {
+    "paquets": [],
+    "brouillons": false,
+    "accepter_404": []
+  },
+  "site": {
+    "nom": "",
+    "pays": ""
+  },
+  "admin": {
+    "nom": "",
+    "email": "",
+    "fonction": "",
+    "bio": "",
+    "mot_de_passe": "",
+    "adresse": ""
+  },
+  "domaine": {
+    "url": "",
+    "statut": "achete",
+    "hebergeur": "",
+    "ssl": "inconnu"
+  },
+  "identite": {
+    "type": "Organization",
+    "nom_legal": "",
+    "telephone": "",
+    "email": "",
+    "adresse": "",
+    "code_postal": "",
+    "ville": "",
+    "pays": ""
+  },
+  "seo": {
+    "indexer": true,
+    "robots_ia": "open"
+  },
+  "design": {
+    "direction": "",
+    "logo": ""
+  },
+  "images_fournisseur": "aucun",
+  "images": [],
+  "pages": [],
+  "remplacer_codes_courts": {},
+  "modifications": [],
+  "redirections": [],
+  "menus": {
+    "principal": [],
+    "pied": []
+  }
+}

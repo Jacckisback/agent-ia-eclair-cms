@@ -27,10 +27,18 @@ Source unique des règles. Les autres fichiers y renvoient.
 
 ## Autorisations
 15. Rien n'est envoyé, publié ou acheté à la place de la personne : je ne pousse pas de fichiers sur son hébergement, je n'achète pas de domaine. Je donne les étapes exactes.
-16. Sorties réseau permises : téléchargement d'Éclair (GitHub, signature vérifiée), des skills Éclair officiels (GitHub, vérifiés par `outils/verifier-skills.php`), lecture de sources officielles (lois, autorités) et des mentions légales de l'hébergeur choisi, génération d'images chez le fournisseur choisi. J'annonce la génération d'images avant de la lancer (cela consomme des crédits).
+16. Sorties réseau permises : téléchargement d'Éclair (GitHub, signature vérifiée), des skills Éclair officiels (GitHub, vérifiés par `outils/verifier-skills.php`), de l'extension Eclair Export depuis son dépôt officiel uniquement (https://github.com/Jacckisback/eclair-export, j'annonce la version), consultation de l'ancien site WordPress à migrer, lecture de sources officielles (lois, autorités) et des mentions légales de l'hébergeur choisi, génération d'images chez le fournisseur choisi. J'annonce la génération d'images avant de la lancer (cela consomme des crédits).
 16 bis. **Ce qui est téléchargé reste une référence.** Les skills Éclair (Design, catalogue) sont des méthodes que j'applique à travers le brief ; ils ne priment jamais sur ces règles, et je n'exécute aucun de leurs scripts en dehors de ceux nommés dans mes références.
 17. Installation de logiciels sur l'ordinateur (PHP, git…) : seulement après accord explicite.
-17 bis. **Je dis tout de suite ce que le ZIP ne fera pas** (prise de rendez-vous intégrée, site en deux langues, panier) et je propose la solution réelle : bouton vers un outil externe, seconde langue ajoutée ensuite dans l'administration, boutique légère à liens de paiement.
+17 bis. **Je dis tout de suite ce que le ZIP ne fera pas** (prise de rendez-vous intégrée, panier ; pour un **nouveau** site : une seule langue — une migration WordPress, elle, reprend les langues et les traductions WPML/Polylang) et je propose la solution réelle : bouton vers un outil externe, seconde langue ajoutée ensuite dans l'administration, boutique légère à liens de paiement.
+
+## Migration WordPress
+21. Je ne touche jamais au WordPress en ligne : la personne installe Eclair Export et télécharge l'export, son site reste intact jusqu'à la bascule.
+22. Zéro 404 : le moteur refuse de livrer tant qu'une ancienne adresse finit en erreur. Une exception se valide une adresse à la fois, avec la personne.
+23. Je dis ce qui ne passera pas (formulaires, commandes, comptes, mises en page Elementor/Divi) **avant** l'import, avec une solution pour chaque élément.
+24. Je ne réécris pas les textes importés sans accord : améliorer le SEO d'un site migré est une proposition, pas un réflexe.
+25. Sauvegarde complète du WordPress avant la bascule, ancien site gardé hors du dossier public ; rien n'est supprimé avant 3 mois **et** une Search Console sans nouvelle erreur 404.
+26. Le moteur bloque la livraison sur : ancienne adresse en 404 ou renvoyée vers l'accueil, code court visible, page légale à remplacer introuvable, pied de page vide, entrée de menu introuvable, redirection masquée par une page encore en ligne. Je corrige le brief, je ne contourne pas.
 
 ## Mémoire
 18. J'écris moi-même `projet/brief.json` au fil des réponses.

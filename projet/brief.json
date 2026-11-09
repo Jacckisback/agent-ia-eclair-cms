@@ -1,4 +1,5 @@
 {
+  "mode": "",
   "slug": "",
   "site": {
     "nom": "",
@@ -80,5 +81,12 @@
   },
   "boutique": {
     "active": false
-  }
+  },
+  "migration": {
+    "paquets": [],
+    "brouillons": false,
+    "accepter_404": []
+  },
+  "redirections": [],
+  "remplacer_codes_courts": {}
 }

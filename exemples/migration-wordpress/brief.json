@@ -1,0 +1,84 @@
+{
+  "slug": "atelier-exemple",
+  "mode": "migration",
+  "migration": {
+    "paquets": [
+      "exemples/migration-wordpress/paquet/eclair-export-atelier-exemple-2026-11-09-abc123.zip"
+    ],
+    "brouillons": false,
+    "accepter_404": []
+  },
+  "site": {
+    "nom": "",
+    "langue": "",
+    "type": "",
+    "pays": "FR"
+  },
+  "admin": {
+    "nom": "Marc Exemple",
+    "email": "marc@exemple-fictif.fr",
+    "fonction": "Menuisier",
+    "bio": "Menuisier à Nantes depuis 2005, spécialiste du chêne massif."
+  },
+  "domaine": {
+    "url": "",
+    "ssl": "oui"
+  },
+  "identite": {
+    "type": "LocalBusiness",
+    "nom_legal": "Atelier Exemple SARL",
+    "telephone": "+33 2 00 00 00 00",
+    "email": "contact@atelier-exemple.fr",
+    "ville": "Nantes",
+    "pays": "FR"
+  },
+  "design": {
+    "direction": "argile"
+  },
+  "images_fournisseur": "aucun",
+  "images": [],
+  "pages": [
+    {
+      "cle": "mentions",
+      "remplace": "adresse:/mentions-legales/",
+      "titre": "Mentions légales",
+      "seo": {
+        "noindex": true,
+        "description": "Mentions légales de l Atelier Exemple."
+      },
+      "blocs": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Éditeur du site"
+        },
+        {
+          "type": "paragraph",
+          "text": "Atelier Exemple SARL (entreprise fictive de l'exemple), 1 rue de l'Exemple, 44000 Nantes. Téléphone : +33 2 00 00 00 00. E-mail : contact@atelier-exemple.fr."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Hébergeur"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hébergeur Exemple SAS, 1 rue de l'Exemple, 00000 Exempleville (données fictives)."
+        }
+      ]
+    }
+  ],
+  "menus": {
+    "principal": [],
+    "pied": [
+      "mentions"
+    ]
+  },
+  "remplacer_codes_courts": {
+    "contact-form-7": "contact"
+  },
+  "seo": {
+    "indexer": true,
+    "robots_ia": "open"
+  }
+}
